@@ -1,0 +1,317 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #111;
+    position: fixed;
+    color: aliceblue;
+    top: 0;
+    left: 0;
+}
+.nav{
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #666;
+    margin-right: 10px;
+    
+}
+
+nav a:hover{
+    padding: 5px;
+    border-top: 4px solid green;
+    color: aliceblue;
+    background-color: rgb(48, 44, 44);
+}
+
+
+main{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.item1{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+.item1 p{
+    padding-top: 20px;
+}
+
+.item1 span{
+    background-color: rgb(29, 238, 29);
+    border-radius: 5px;
+}
+
+.item1 img{
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.item1 .img2,.item1 .img3{
+    display: none;
+}
+
+.item1 .circle{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.circle1,.circle2,.circle3{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: #777;
+}
+
+
+
+.item2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 8px;
+
+}
+
+.item2 .no span{
+    margin-top: 12px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+    text-align: center;
+}
+
+.item4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item4 div{
+    flex-basis: 33.3%;
+    margin: 5px;
+}
+
+.item4 img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+}
+
+.item5{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item6{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.item6 div{
+    flex-basis: 25%;
+    margin: 5px;
+}
+
+.item6 div img{
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.item6 div b{
+    display: block;
+}
+
+footer{
+    width: 100%;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footwrap{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer .footwrap div{
+    /* margin: 5px; */
+    flex-grow: 5;
+    flex-basis: 25%; 
+}
+
+.footwrap a{
+    text-decoration: none;
+    color: green;
+}
+
+footer .boxs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: red; */
+
+}
+
+footer .boxs .box{
+    flex-basis: 20%;
+    border: 5px solid rgba(255, 235, 205, 0.404);
+    height: 40px;
+    background-color: rgba(119, 119, 119, 0.24);
+    
+}
+.end{
+    width: 100%;
+    padding: 6px 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+}
+
+.end div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width : 415px) {
+    .container{
+        margin-top: 180px;
+    }
+    
+    nav{
+        position: absolute;
+        height: 180px;
+    }
+
+    .nav{
+        margin: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    nav a{
+        margin: 0;
+        display: block; 
+    }
+
+    nav h1{
+        font-size: 22px;
+        margin: 5px;
+    }
+
+    main{
+        width: 100%;
+        margin: 0;
+    }
+
+    .item1{
+        height: 60vh;
+        font-size: 14px;
+    }
+
+    .item1 img{
+        height: 40vh;
+    }
+
+    .item2{
+        height: 50vh;
+        display: block; 
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .item2 div{
+        margin-left: 5px;
+    }
+
+    .item4{
+        display: block;
+        font-size: 14px;
+    }
+
+    .item4 div{
+        margin: 40px;
+    }
+
+    .item6{
+        display: block;
+    }
+
+    .item6 div{
+        font-size: 14px;
+        margin: 15px;
+    }
+
+    footer .footwrap{
+        width: 100%;
+        display: block;
+        font-size: 14px;
+    }
+
+    footer h1{
+        font-size: 22px;
+    }
+}
+
+.scroll{
+    width: 30px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(102, 102, 102, 0.377);
+    text-align: center;
+}
+
+i{
+    font-size: 24px;
+}
+
+
